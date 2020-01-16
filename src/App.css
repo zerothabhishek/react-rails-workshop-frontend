@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Board {
+  /* border: 1px solid lightcoral; */
+  clear: both;
+}
+
+.List {
+  width: 20rem;
+  border: 1px solid lightcoral;
+  background-color: wheat;
+  /* min-height: 20em; */
+  float: left;
+  margin-left: 1em;
+}
+
+.ListHeader{
+  color: brown;
+  border-bottom: 1px solid brown;
+  font-weight: bold;
+  padding: 1em 0;
+}
+
+.ListCard{
+  background-color: tomato;
+  color: white;
+  font-weight: bold;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.FullCard {
+}
+
+.modal {
+  height: 20em;
+  width: 40em;
+  position: absolute;
+  top: 5em;
+  left: 12em;
+  background-color: chocolate;
+  text-align: left;
+  padding: 1em;
+}
+
+.smooth-button {
+  background-color: inherit;
+  cursor: pointer; 
+}
