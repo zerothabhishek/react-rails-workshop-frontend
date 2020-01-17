@@ -65,3 +65,46 @@
   text-align: right;
   font-weight: bold;
 }
+
+.MyForm{
+  clear: both;
+  width: 30em;
+  padding: 2rem;
+  padding-top: 0;
+  margin: 2rem auto;
+  overflow: auto;
+  background-color: lavender;;
+}
+
+.MyForm .YourNameInput{
+  margin-top: 2rem;
+}
+
+.MyForm label {
+  font-size: 1.25em;
+}
+
+.MyForm input{
+  width: 10em;
+  font-size: 1.5em;
+}
+
+.MyForm .FormHello{
+  margin: 0em auto;
+  margin-top: 1em;
+  padding: 0.5em;
+  width: 10em;
+  background-color: tomato;
+  color: whitesmoke;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+.MyForm .smallText {
+  font-size: 0.5em;
+}
+
+.MyForm .smallText span {
+  color: red;
+  border-bottom: 1px solid tomato;
+}

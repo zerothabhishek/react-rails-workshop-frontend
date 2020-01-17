@@ -1,12 +1,15 @@
-import React, { useState } from 'react';
-
+import React from 'react';
 import './App.css';
-import TotalCounter from './components/TotalCounter';
+import MyForm1 from './components/MyForm1';
+import MyForm2 from './components/MyForm2';
+import MyForm3 from './components/MyForm3';
 
 function App() {
   return (
     <div className="App">
-      <TotalCounter />
+      <MyForm1 />
+      {/* <MyForm2 /> */}
+      {/* <MyForm3 /> */}
     </div>
   );
 }
@@ -15,21 +18,15 @@ export default App;
 
 
 /*
-## Step-2e: Lifting state up
+## Step-3a: Forms
 
-- Parent component passes data to child using props
-- Child component cant pass data directly to parent
-- The technique used is called lifting state up
+- React forms can be tied to state
+  but they need to be 'controlled'
 
-- TotalCounter:
-  - TotalCounter passes a function to Counter
-  - Counter calls it when state changes
-  - TotalCounter then recalculates
+- MyForm1: No state
+- MyForm2: Has state but not controlled
+- MyForm3: Has controlled state
 
-- Try:
-  What if Counter is called without onChange ? Fix code for that
+- Try: Show hello widget only after typing starts 
 
-- Also note:
-  - TotalCounter.js:21 - creating space
-  - TotalCounter.js:31 - inline styles
 */
