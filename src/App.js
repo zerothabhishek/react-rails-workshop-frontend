@@ -1,27 +1,17 @@
 import React from 'react';
-// import logo from './logo.svg';
 import Hello from './components/Hello.js';
+import CompWithEvent from './components/CompWithEvent';
 import './App.css';
+import CompWithState from './components/CompWithState.js';
 
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-
       <Hello name="abhishek" />
+      <br/>
+      <CompWithEvent />
+      <br/>
+      {/* <CompWithState /> */}
     </div>
   );
 }
@@ -30,9 +20,12 @@ export default App;
 
 
 /*
-## Step-2b: basic components
+## Step-2c: Add some state
 
-- Component in a separate file
-- Try: File component for showing current date
+- CompWithEvent: component with event handler
+- CompWithState: component with state
+
+Try:
+- Counter component
 
 */
