@@ -1,17 +1,12 @@
-import React from 'react';
-import Hello from './components/Hello.js';
-import Counter from './components/Counter.js';
-import Counter2 from './components/Counter2.js';
+import React, { useState } from 'react';
+
 import './App.css';
+import TotalCounter from './components/TotalCounter';
 
 function App() {
   return (
     <div className="App">
-      <Hello name="abhishek" />
-      <br/>
-      <Counter start={10} />
-      <br />
-      {/* <Counter2 start={100} /> */}
+      <TotalCounter />
     </div>
   );
 }
@@ -20,17 +15,21 @@ export default App;
 
 
 /*
-## Step-2d: State and props
+## Step-2e: Lifting state up
 
-- Counter: has both state and prop
-- Try: Add prop to count backwards
-- The idea: 
-    UI = fn(state, props)
-  ie:
-  - When state and props change UI gets re-rendered
-  - Try: changing state and prop from Webtools
-  - While re-rendering, the entire component function is executed again
-    so local variables get re-initialized
-  - Counter2: local variable does not change
+- Parent component passes data to child using props
+- Child component cant pass data directly to parent
+- The technique used is called lifting state up
 
+- TotalCounter:
+  - TotalCounter passes a function to Counter
+  - Counter calls it when state changes
+  - TotalCounter then recalculates
+
+- Try:
+  What if Counter is called without onChange ? Fix code for that
+
+- Also note:
+  - TotalCounter.js:21 - creating space
+  - TotalCounter.js:31 - inline styles
 */

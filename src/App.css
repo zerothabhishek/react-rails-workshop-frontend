@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+.TotalCounter{
+  clear: both;
+  width: 60em;
+  margin: 2rem auto;
+  /* border: 1px solid; */
+  overflow: auto;
+}
+
+.Counter{
+  float: left;
+  width: 30%;
+  padding: 1em;
+}
+
+.CounterA{
+  background-color: pink;
+}
+
+.CounterB{
+  background-color: lavender;
+}
+
+.TheTotal{
+  float: left;
+  width: 30%;
+  text-align: right;
+  font-weight: bold;
+}

@@ -1,29 +1,22 @@
 import React, { useState } from 'react';
 
 function Counter(props) {
-  const [count, setCount] = useState(props.start);
+  const [count, setCount] = useState(props.start || 0);
 
   function clickHandler() {
-    console.log('You clicked !');
     let newState = count + 1;
     setCount(newState);
+    props.onChange(newState);
   }
 
-  console.log('Rendering Counter..', props.start, count);
-
   return (
-    <div>
+    <span>
+      {count}
+      <br />
       <button onClick={clickHandler}>
         Click me and check count
       </button>
-      <br />
-      <div>
-        State (count): {count}
-      </div>
-      <div>
-        Props (start): {props.start}
-      </div>
-    </div>
+    </span>
   );
 }
 
