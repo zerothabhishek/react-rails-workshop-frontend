@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import Board from './components/Board.js';
-// import SampleListItems from './SampleData.js';
+import SampleListItems from './SampleData.js';
 
 // const CardDataURL = 'http://localhost:3000/foo.json';
 const CardDataURL = '/cards'; // => /api/v1/dashboards/1/
@@ -20,6 +20,9 @@ function App() {
     .then((data) => { console.log(data); setCardData(data) })
     .catch(() => { console.log('Problem fetching data')});
   }, [cardData.count]); // TODO: find a better condition
+
+  // Fallback for demo
+  if (cardData.length === 0) setCardData(SampleListItems);
 
   return (
     <div className="App">
