@@ -24,3 +24,13 @@ function App() {
 }
 
 export default App;
+
+
+/*
+- Things to notice:
+  - Hot reload: change a few things and see
+  - There is JSX
+  - className
+  - Templating in JSX
+  - Check Webtools: Elements, Components
+*/
