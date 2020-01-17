@@ -1,32 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import logo from './logo.svg';
 import './App.css';
-import Board from './components/Board.js';
-import SampleListItems from './SampleData.js';
-
-// const CardDataURL = 'http://localhost:3000/foo.json';
-const CardDataURL = '/cards'; // => /api/v1/dashboards/1/
-
-// data.lists[0].cards
-// data.lists[1].cards
 
 function App() {
-  // let listData = SampleListItems;
-
-  let [cardData, setCardData] = useState([]);
-
-  useEffect(() => {
-    fetch(CardDataURL)
-    .then((res) => res.json())
-    .then((data) => { console.log(data); setCardData(data) })
-    .catch(() => { console.log('Problem fetching data')});
-  }, [cardData.count]); // TODO: find a better condition
-
-  // Fallback for demo
-  if (cardData.length === 0) setCardData(SampleListItems);
-
   return (
     <div className="App">
-      <Board listData={cardData} />
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
