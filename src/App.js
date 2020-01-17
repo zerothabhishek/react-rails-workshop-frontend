@@ -1,32 +1,32 @@
 import React from 'react';
 import './App.css';
-import MyForm1 from './components/MyForm1';
-import MyForm2 from './components/MyForm2';
-import MyForm3 from './components/MyForm3';
+import MyEffect1 from './components/MyEffect1';
+import MyEffect2 from './components/MyEffect2';
+import MyEffect3 from './components/MyEffect3';
+
 
 function App() {
   return (
     <div className="App">
-      <MyForm1 />
-      {/* <MyForm2 /> */}
-      {/* <MyForm3 /> */}
+      <MyEffect1 />
     </div>
   );
 }
 
 export default App;
 
-
 /*
-## Step-3a: Forms
+## Step-4a: Effects
 
-- React forms can be tied to state
-  but they need to be 'controlled'
+- Effect: definition
+- useEffect: the mechanics
+  - ??
 
-- MyForm1: No state
-- MyForm2: Has state but not controlled
-- MyForm3: Has controlled state
 
-- Try: Show hello widget only after typing starts 
+- MyEffect1: Set the page title
+- MyEffect2: Fetch Ajax data
+- MyEffect3: Fetch Ajax data, show loading message
+- Try: show proper message when it fails
+
 
 */

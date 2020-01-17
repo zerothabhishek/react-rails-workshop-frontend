@@ -100,11 +100,31 @@
   font-weight: bold;
 }
 
-.MyForm .smallText {
+.smallText {
   font-size: 0.5em;
 }
 
-.MyForm .smallText span {
+.smallText span {
   color: red;
   border-bottom: 1px solid tomato;
+}
+
+.MyEffect{
+  clear: both;
+  width: 30em;
+  padding: 2rem;
+  margin: 2rem auto;
+  overflow: auto;
+  background-color:steelblue;
+}
+
+.MyEffect .Name{
+  color:ivory;
+  font-weight: bold;
+}
+
+.MyEffect .Weapon{
+  color: goldenrod;
+  font-size: 3rem;
+  font-family: monospace;
 }
