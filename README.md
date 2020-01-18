@@ -16,6 +16,10 @@
 - Start the app:  
   `yarn start`  
 
+- Install the React Developer Tools extension:
+  Download [here](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+
+
 ## The backend:
 
 https://github.com/venky-lumerasoft/rails-react-workshop
