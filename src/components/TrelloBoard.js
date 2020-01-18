@@ -12,7 +12,7 @@ function TrelloBoard(props) {
         {props.title}
       </div>
       {props.lists.map((list, i) =>
-        <TrelloList title="In-progress" cards={list.cards} />
+        <TrelloList key={i} title={list.title} cards={list.cards} />
       )}
     </div>
   );

@@ -139,6 +139,12 @@
   background-color: lightgoldenrodyellow;
   clear: both;
   min-height: 20rem;
+  overflow: auto;
+}
+
+.BoardHeader{
+  font-size: 2rem;
+  color: blueviolet;
 }
 
 .TrelloList {
@@ -164,7 +170,7 @@
   margin: 0.5rem;
   padding: 0.5rem;
   text-align: left;
-  width: 20rem;
+  /* width: 20rem; */
 }
 
 .TrelloCardFull{
