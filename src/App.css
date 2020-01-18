@@ -66,6 +66,8 @@
   font-weight: bold;
 }
 
+/* ------------------------------------------------------------------- */
+
 .MyForm{
   clear: both;
   width: 30em;
@@ -109,6 +111,8 @@
   border-bottom: 1px solid tomato;
 }
 
+/* ------------------------------------------------------------------- */
+
 .MyEffect{
   clear: both;
   width: 30em;
@@ -128,3 +132,83 @@
   font-size: 3rem;
   font-family: monospace;
 }
+
+/* ------------------------------------------------------------------- */
+
+.TrelloBoard {
+  background-color: lightgoldenrodyellow;
+  clear: both;
+  min-height: 20rem;
+}
+
+.TrelloList {
+  width: 20rem;
+  border: 1px solid lightcoral;
+  background-color: wheat;
+  min-height: 20rem;
+  float: left;
+  margin-left: 1em;
+}
+
+.TrelloList .ListHeader {
+  color: brown;
+  border-bottom: 1px solid brown;
+  font-weight: bold;
+  padding: 1em 0;
+}
+
+.TrelloCard {
+  background-color: tomato;
+  color: white;
+  font-weight: bold;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-align: left;
+  width: 20rem;
+}
+
+.TrelloCardFull{
+
+}
+
+.TrelloModal {
+  height: 20em;
+  width: 40em;
+  position: absolute;
+  top: 5em;
+  left: 12em;
+  background-color: salmon;
+  text-align: left;
+  padding: 1em;
+}
+
+.TrelloCardForm {
+  margin-top: 2rem;;
+  margin-left: 2rem;
+  padding-left: 2rem;
+}
+
+.TrelloCardForm .FormField {
+  clear: both;
+  margin: 1rem auto;;
+}
+
+.TrelloCardForm .FormField label{
+  float: left;
+  width: 6rem;
+  text-align: right;
+  padding-right: 1rem;
+  font-size: 1.25rem;
+}
+
+.TrelloCardForm .FormField input{
+  font-size: 1.5rem;
+  width: 20rem;
+}
+
+.TrelloCardForm .FormField button{
+  margin-left: 7rem;;
+  font-size: 1.5rem;
+}
+
+
