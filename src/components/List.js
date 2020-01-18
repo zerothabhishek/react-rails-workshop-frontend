@@ -4,11 +4,10 @@ import CardForm from './CardForm';
 import MyModal from './MyModal.js';
 
 function List(props) {
-  let listName = props.name || "-";
-  let cards = props.cards || [];
+  let listName = props.listData.title || "-";
+  let cards = props.listData.cards || [];
 
   let [formOpen, setFormOpen] = useState(false);
-  // console.log(cards);
 
   function openForm(event) {
     event.preventDefault();

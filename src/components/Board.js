@@ -4,12 +4,16 @@ import SampleListItems from '../SampleData';
 
 
 function Board(props) {
-  const listNames = Object.keys(props.listData);
+  const lists = props.boardData.lists;
 
   return (
     <div className='Board'>
-      {listNames.map((listName, i) =>
-        <List key={i} name={listName} cards={ props.listData[listName] }></List>
+      <div>
+        {props.boardData.title}
+      </div>
+
+      {lists.map((listData, i) => 
+        <List key={i} listData={listData}></List>
       )}
     </div>
   );

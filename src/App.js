@@ -1,32 +1,29 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import Board from './components/Board.js';
-import SampleListItems from './SampleData.js';
+import SampleBoardData from './SampleData';
 
-// const CardDataURL = 'http://localhost:3000/foo.json';
-const CardDataURL = '/cards'; // => /api/v1/dashboards/1/
-
-// data.lists[0].cards
-// data.lists[1].cards
+const DataURL = '/api/v1/dashboards/1/213';
 
 function App() {
-  // let listData = SampleListItems;
-
-  let [cardData, setCardData] = useState([]);
+  let [boardData, setBoardData] = useState([]);
 
   useEffect(() => {
-    fetch(CardDataURL)
+    fetch(DataURL)
     .then((res) => res.json())
-    .then((data) => { console.log(data); setCardData(data) })
-    .catch(() => { console.log('Problem fetching data')});
-  }, [cardData.count]); // TODO: find a better condition
-
-  // Fallback for demo
-  if (cardData.length === 0) setCardData(SampleListItems);
+    .then((data) => { 
+      console.log(data);
+      setBoardData(data) 
+    })
+    .catch(() => { 
+      console.log('Problem fetching data'); 
+      setBoardData(SampleBoardData)
+    });
+  }, [boardData.count]);  // TODO: find a better condition
 
   return (
     <div className="App">
-      <Board listData={cardData} />
+      { boardData.lists && <Board boardData={boardData} /> }
     </div>
   );
 }
