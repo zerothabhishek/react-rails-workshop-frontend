@@ -24,17 +24,17 @@ function App() {
 export default App;
 
 /*
-## Step-4a: Effects
+## Step-5a: My-Trello
 
-- Effect: definition
-- useEffect: the mechanics
-  - ??
+- What we are trying to build: http://localhost:3000/my-trello.png
+- Review the API
+- Review the components:
+  - TrelloCard
+  - TrelloList
+  - TrelloBoard
+  - TrelloCardForm
 
-
-- MyEffect1: Set the page title
-- MyEffect2: Fetch Ajax data
-- MyEffect3: Fetch Ajax data, show loading message
-- Try: show proper message when it fails
-
+- Try: Changing props/state on the components
+- Review: saveCard.js
 
 */
